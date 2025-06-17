@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: 'Baloo 2', cursive;
+  background: url('image.png') repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: white;
+  border: 5px solid #fc1c4c;
+  padding: 2rem;
+  max-width: 700px;
+  width: 90%;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.3);
+  position: relative;
+}
+
+h1 {
+  color: #fc1c4c;
+  margin-bottom: 1rem;
+}
+
+.timer {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-weight: bold;
+  color: #fc1c4c;
+  font-size: 20px;
+}
+
+#word-box {
+  font-size: 24px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  min-height: 120px;
+  color: #444;
+  text-align: left;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  pointer-events: none;
+}
+
+.word-box span {
+  margin-right: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 22px;
+  border: 2px solid #fc1c4c;
+  border-radius: 10px;
+  outline: none;
+  margin-top: 10px;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.result button {
+  background: white;
+  color: #fc1c4c;
+  border: 2px solid #fc1c4c;
+  padding: 10px 20px;
+  font-size: 22px;
+  border-radius: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.result button:hover {
+  background-color: #fc1c4c;
+  color: white;
+}
+
+.correct {
+  color: #04770e;
+  font-weight: bold;
+}
+
+.incorrect {
+  color: red;
+  font-weight: bold;
+}
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 10000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
+  max-width: 90%;
+}
+
+.popup-content h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.popup-content p {
+  font-size: 1rem;
+}
